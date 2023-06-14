@@ -102,6 +102,14 @@ linuxarmv6l:
 # not supported
 linuxarmv7l:
 
+# supported
+linuxaarch64:
+	ADDON_LDFLAGS += -ltensorflow
+	
+	# local path: use libtensorflow in libs/tensorflow
+	ADDON_INCLUDES += libs/tensorflow/include
+	ADDON_LDFLAGS += -L${OF_ROOT}/addons/ofxTensorFlow2/libs/tensorflow/lib/linux64
+
 # not supported
 android/armeabi:
 
