@@ -108,7 +108,7 @@ linuxaarch64:
 	
 	# local path: use libtensorflow in libs/tensorflow
 	ADDON_INCLUDES += libs/tensorflow/include
-	ADDON_LDFLAGS += -L${OF_ROOT}/addons/ofxTensorFlow2/libs/tensorflow/lib/linux64
+	ADDON_LDFLAGS += -L${OF_ROOT}/addons/ofxTensorFlow2/libs/tensorflow/lib/linuxaarch64
 
 # not supported
 android/armeabi:
