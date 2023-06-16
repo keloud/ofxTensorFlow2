@@ -125,6 +125,9 @@ osx:
 	#ADDON_INCLUDES += /usr/local/include
 	#ADDON_LDFLAGS += -L/usr/local/lib -ltensorflow_framework -ltensorflow
 
+	# Homebrew path
+	#ADDON_INCLUDES += /opt/homebrew/opt/libtensorflow/include
+	#ADDON_LDFLAGS += -L/opt/homebrew/opt/libtensorflow/lib -ltensorflow_framework -ltensorflow
 # not supported
 ios:
 
