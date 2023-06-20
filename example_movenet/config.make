@@ -105,7 +105,7 @@
 #
 #   Note: Leave a leading space when adding list items with the += operator
 ################################################################################
-# PROJECT_CFLAGS = 
+PROJECT_CFLAGS = -DUSE_LIVE_VIDEO
 
 ################################################################################
 # PROJECT OPTIMIZATION CFLAGS
