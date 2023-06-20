@@ -119,15 +119,15 @@ android/armeabi-v7a:
 # supported
 osx:
 	# local path: use libtensorflow in libs/tensorflow
-	ADDON_INCLUDES += libs/tensorflow/include
+	#ADDON_INCLUDES += libs/tensorflow/include
 	
 	# system path: use libtensorflow in /usr/local
 	#ADDON_INCLUDES += /usr/local/include
 	#ADDON_LDFLAGS += -L/usr/local/lib -ltensorflow_framework -ltensorflow
 
 	# Homebrew path
-	#ADDON_INCLUDES += /opt/homebrew/opt/libtensorflow/include
-	#ADDON_LDFLAGS += -L/opt/homebrew/opt/libtensorflow/lib -ltensorflow_framework -ltensorflow
+	ADDON_INCLUDES += /opt/homebrew/opt/libtensorflow/include
+	ADDON_LDFLAGS += -L/opt/homebrew/opt/libtensorflow/lib -ltensorflow_framework -ltensorflow
 # not supported
 ios:
 
